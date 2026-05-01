@@ -4,15 +4,28 @@ This repository hosts **privacy policies** and **technical support** pages for o
 
 ## Structure
 
+This repo currently hosts standalone public pages such as:
+
 ```
-├── <app-name>/
-│   ├── privacy-policy.md
-│   └── support.md
+├── weiquan-privacy.html
+├── weiquan-support.html
+├── artaner-privacy.html
+└── artaner-support.html
 ```
 
 ## Usage
 
-Each app has its own directory. Add a new folder for each app and include the relevant documents.
+Add new public legal/support pages as standalone HTML files in the repo root.
+
+### Artaner
+
+- Privacy Policy: `artaner-privacy.html`
+- Support: `artaner-support.html`
+
+If GitHub Pages is enabled for this repository, the expected public URLs are:
+
+- `https://diudiuabailu-pixel.github.io/app-legal-docs/artaner-privacy.html`
+- `https://diudiuabailu-pixel.github.io/app-legal-docs/artaner-support.html`
 
 ## GitHub Pages
 

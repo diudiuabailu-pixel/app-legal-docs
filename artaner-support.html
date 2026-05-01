@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artaner - 技术支持 / Support</title>
+    <style>
+        :root {
+            --bg: #f8fafc;
+            --card: #ffffff;
+            --text: #0f172a;
+            --muted: #475569;
+            --line: #e2e8f0;
+            --brand: #2563eb;
+            --faq: #f8fafc;
+        }
+        * { box-sizing: border-box; }
+        body {
+            margin: 0;
+            padding: 24px;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.75;
+        }
+        .wrap {
+            max-width: 860px;
+            margin: 0 auto;
+            background: var(--card);
+            border: 1px solid var(--line);
+            border-radius: 18px;
+            padding: 32px;
+            box-shadow: 0 10px 30px rgba(15, 23, 42, 0.05);
+        }
+        h1 { color: var(--brand); margin-top: 0; }
+        h2 { margin-top: 32px; color: #1e3a8a; }
+        .faq {
+            background: var(--faq);
+            border: 1px solid var(--line);
+            border-radius: 12px;
+            padding: 16px;
+            margin: 14px 0;
+        }
+        .meta { color: var(--muted); }
+        a { color: var(--brand); }
+        hr { border: none; border-top: 1px solid var(--line); margin: 28px 0; }
+        ul { padding-left: 22px; }
+    </style>
+</head>
+<body>
+    <main class="wrap">
+        <h1>Artaner 技术支持 / Support</h1>
+        <p class="meta">联系邮箱 / Contact: <a href="mailto:feedback@artaner.app">feedback@artaner.app</a></p>
+
+        <h2>中文</h2>
+        <p>Artaner 是一款把展览、旅行和日常时刻做成「邮票」收藏的 iOS App。你可以拍照或选图，套用模板，保存到本地，并使用 AI 讲解功能生成画面说明。</p>
+
+        <h3>常见问题</h3>
+        <div class="faq"><strong>Q：为什么相机不可用？</strong><br>A：先检查 iPhone 设置 → Artaner → 相机 是否已开启。如果你在模拟器中测试，模拟器没有相机硬件，会显示不可用并提供从相册选图入口。</div>
+        <div class="faq"><strong>Q：长按拍摄没反应？</strong><br>A：请按住至少 0.5 秒，等待快门外圈进度完成后再松开。轻点则是普通拍照。</div>
+        <div class="faq"><strong>Q：讲解功能没声音？</strong><br>A：请到 iPhone 设置 → 辅助功能 → 朗读内容 → 语音，下载可用语音包。增强版或神经版语音效果更自然。</div>
+        <div class="faq"><strong>Q：讲解功能离线能用吗？</strong><br>A：本地识别和模型整理可离线运行，但获取 Wikipedia 资料需要网络。没网时可能提示网络不可用。</div>
+        <div class="faq"><strong>Q：模型加载失败怎么办？</strong><br>A：内置模型随 App 安装包提供。如果加载异常，建议先在设置页查看错误信息，必要时重新安装 App。</div>
+        <div class="faq"><strong>Q：数据会不会丢？</strong><br>A：所有数据保存在本机。卸载 App 后数据会被删除。建议把重要内容通过导出功能备份到 iCloud Drive 或邮箱。</div>
+        <div class="faq"><strong>Q：支持哪些系统？</strong><br>A：最低支持 iOS 17.0，建议使用 iPhone 12、iPad M1 或更新设备以获得更稳定的模型体验。</div>
+        <div class="faq"><strong>Q：iPad 可以用吗？</strong><br>A：可以，Artaner 支持 iPad，界面会根据横竖屏自动适配。</div>
+
+        <h3>反馈与联系</h3>
+        <ul>
+            <li>邮箱：<a href="mailto:feedback@artaner.app">feedback@artaner.app</a></li>
+            <li>你可以在反馈中附上设备型号、iOS 版本、问题截图和复现步骤，这样我们排查会更快。</li>
+        </ul>
+
+        <hr>
+
+        <h2>English</h2>
+        <p>Artaner is an iOS app for turning exhibits, travel, and everyday moments into collectible stamps. You can capture or import a photo, apply a template, save it locally, and use AI narration to generate contextual descriptions.</p>
+
+        <h3>FAQ</h3>
+        <div class="faq"><strong>Q: Why is the camera unavailable?</strong><br>A: Check iPhone Settings → Artaner → Camera. If you are testing in the simulator, there is no camera hardware, so the app will offer photo library fallback instead.</div>
+        <div class="faq"><strong>Q: Long-press capture does not work.</strong><br>A: Hold for at least 0.5 seconds and wait for the progress ring around the shutter to complete before releasing. A quick tap performs a normal capture.</div>
+        <div class="faq"><strong>Q: Narration has no audio.</strong><br>A: Go to iPhone Settings → Accessibility → Spoken Content → Voices and download a voice pack. Enhanced or Neural voices usually sound best.</div>
+        <div class="faq"><strong>Q: Does narration work offline?</strong><br>A: On-device recognition and summarization can work offline, but fetching Wikipedia context requires internet access. Without network, the app may show a network unavailable message.</div>
+        <div class="faq"><strong>Q: What if the model fails to load?</strong><br>A: The built-in model ships with the app. Check the error details in Settings first, and reinstalling the app usually fixes persistent loading issues.</div>
+        <div class="faq"><strong>Q: Will I lose my data?</strong><br>A: All data is stored locally on your device. Uninstalling the app removes it. We recommend exporting important content to iCloud Drive or email for backup.</div>
+        <div class="faq"><strong>Q: Which systems are supported?</strong><br>A: Minimum iOS 17.0. For the best model performance, we recommend iPhone 12, iPad M1, or newer devices.</div>
+        <div class="faq"><strong>Q: Does it work on iPad?</strong><br>A: Yes. Artaner supports iPad and adapts its layout automatically for portrait and landscape use.</div>
+
+        <h3>Feedback & Contact</h3>
+        <ul>
+            <li>Email: <a href="mailto:feedback@artaner.app">feedback@artaner.app</a></li>
+            <li>Please include device model, iOS version, screenshots, and reproduction steps when reporting a bug.</li>
+        </ul>
+    </main>
+</body>
+</html>
