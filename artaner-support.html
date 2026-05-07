@@ -1,96 +1,115 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Artaner - 技术支持 / Support</title>
-    <style>
-        :root {
-            --bg: #f8fafc;
-            --card: #ffffff;
-            --text: #0f172a;
-            --muted: #475569;
-            --line: #e2e8f0;
-            --brand: #2563eb;
-            --faq: #f8fafc;
-        }
-        * { box-sizing: border-box; }
-        body {
-            margin: 0;
-            padding: 24px;
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-            background: var(--bg);
-            color: var(--text);
-            line-height: 1.75;
-        }
-        .wrap {
-            max-width: 860px;
-            margin: 0 auto;
-            background: var(--card);
-            border: 1px solid var(--line);
-            border-radius: 18px;
-            padding: 32px;
-            box-shadow: 0 10px 30px rgba(15, 23, 42, 0.05);
-        }
-        h1 { color: var(--brand); margin-top: 0; }
-        h2 { margin-top: 32px; color: #1e3a8a; }
-        .faq {
-            background: var(--faq);
-            border: 1px solid var(--line);
-            border-radius: 12px;
-            padding: 16px;
-            margin: 14px 0;
-        }
-        .meta { color: var(--muted); }
-        a { color: var(--brand); }
-        hr { border: none; border-top: 1px solid var(--line); margin: 28px 0; }
-        ul { padding-left: 22px; }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Artaner - 技术支持 / Support</title>
+  <style>
+    :root {
+      --bg: #f8fafc;
+      --card: #ffffff;
+      --text: #0f172a;
+      --muted: #475569;
+      --line: #e2e8f0;
+      --brand: #2563eb;
+      --faq: #f8fafc;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      padding: 24px;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.75;
+    }
+    .wrap {
+      max-width: 860px;
+      margin: 0 auto;
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      padding: 32px;
+      box-shadow: 0 10px 30px rgba(15, 23, 42, 0.05);
+    }
+    h1 { color: var(--brand); margin-top: 0; }
+    h2 { margin-top: 32px; color: #1e3a8a; }
+    h3 { margin-top: 24px; }
+    .faq {
+      background: var(--faq);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 16px;
+      margin: 14px 0;
+    }
+    .meta { color: var(--muted); }
+    a { color: var(--brand); }
+    hr { border: none; border-top: 1px solid var(--line); margin: 28px 0; }
+    ul { padding-left: 22px; }
+  </style>
 </head>
 <body>
-    <main class="wrap">
-        <h1>Artaner 技术支持 / Support</h1>
-        <p class="meta">联系邮箱 / Contact: <a href="mailto:feedback@artaner.app">feedback@artaner.app</a></p>
+  <main class="wrap">
+    <h1>Artaner 技术支持 / Support</h1>
+    <p class="meta">联系邮箱 / Contact: <a href="mailto:feedback@artaner.app">feedback@artaner.app</a></p>
 
-        <h2>中文</h2>
-        <p>Artaner 是一款把展览、旅行和日常时刻做成「邮票」收藏的 iOS App。你可以拍照或选图，套用模板，保存到本地，并使用 AI 讲解功能生成画面说明。</p>
+    <h2>中文</h2>
+    <p>Artaner 是一款把展览、旅行、日常时刻做成「邮票」收藏的 iOS App。</p>
+    <ul>
+      <li>拍照或选图 → 选一种版式（票根、邮票、拍立得、印章）→ 保存到本地收藏</li>
+      <li>点开邮票可以让 AI 讲解画面里的内容（基于内置模型 + 维基百科）</li>
+      <li>多种导出格式：邮票图、社交海报、AirPrint 打印、Artaner 文件</li>
+    </ul>
 
-        <h3>常见问题</h3>
-        <div class="faq"><strong>Q：为什么相机不可用？</strong><br>A：先检查 iPhone 设置 → Artaner → 相机 是否已开启。如果你在模拟器中测试，模拟器没有相机硬件，会显示不可用并提供从相册选图入口。</div>
-        <div class="faq"><strong>Q：长按拍摄没反应？</strong><br>A：请按住至少 0.5 秒，等待快门外圈进度完成后再松开。轻点则是普通拍照。</div>
-        <div class="faq"><strong>Q：讲解功能没声音？</strong><br>A：请到 iPhone 设置 → 辅助功能 → 朗读内容 → 语音，下载可用语音包。增强版或神经版语音效果更自然。</div>
-        <div class="faq"><strong>Q：讲解功能离线能用吗？</strong><br>A：本地识别和模型整理可离线运行，但获取 Wikipedia 资料需要网络。没网时可能提示网络不可用。</div>
-        <div class="faq"><strong>Q：模型加载失败怎么办？</strong><br>A：内置模型随 App 安装包提供。如果加载异常，建议先在设置页查看错误信息，必要时重新安装 App。</div>
-        <div class="faq"><strong>Q：数据会不会丢？</strong><br>A：所有数据保存在本机。卸载 App 后数据会被删除。建议把重要内容通过导出功能备份到 iCloud Drive 或邮箱。</div>
-        <div class="faq"><strong>Q：支持哪些系统？</strong><br>A：最低支持 iOS 17.0，建议使用 iPhone 12、iPad M1 或更新设备以获得更稳定的模型体验。</div>
-        <div class="faq"><strong>Q：iPad 可以用吗？</strong><br>A：可以，Artaner 支持 iPad，界面会根据横竖屏自动适配。</div>
+    <h3>常见问题</h3>
+    <div class="faq"><strong>Q：为什么相机不可用？</strong><br>A：先检查 iPhone 设置 → Artaner → 相机 是否开启。如果你在模拟器里测试，模拟器没有相机硬件，会自动显示「相机不可用」并提供从相册选取的入口。</div>
+    <div class="faq"><strong>Q：长按拍摄没反应？</strong><br>A：要按住 0.5 秒以上，期间快门按钮外圈会出现黄色进度环。按住到环填满即拍下。如果只是轻点，请用快门按钮直接点击。</div>
+    <div class="faq"><strong>Q：讲解功能没声音？</strong><br>A：iPhone 设置 → 辅助功能 → 朗读内容 → 语音 → 中文，下载一个中文语音包即可。建议下载「婷婷」（增强）或「莉莉」（神经）以获得最自然的效果。</div>
+    <div class="faq"><strong>Q：模型加载失败？</strong><br>A：内置模型文件随 App 安装包分发，约 350MB。在「设置 → 内置讲解模型 → 检查模型加载」可以查看具体错误。如果反复失败，重新安装 App 通常能解决。</div>
+    <div class="faq"><strong>Q：讲解在没网时能用吗？</strong><br>A：识别画面和内置模型整理都在本地完成，不需要联网。但获取维基百科资料需要联网。在没网时讲解会失败，提示「网络不通」。</div>
+    <div class="faq"><strong>Q：怎么把邮票发给朋友？</strong><br>A：邮票详情页 → 分享，有几个选项：<br>• <strong>Artaner 文件</strong>：发一个 <code>.artaner</code> 文件，朋友打开后可以导入到自己的 Artaner（导入功能在 V1.1 上线）<br>• <strong>邮票</strong>：标准邮票图（适合微信、AirDrop）<br>• <strong>海报</strong>：9:16 海报图（适合朋友圈、Instagram Stories）</div>
+    <div class="faq"><strong>Q：数据会不会丢？</strong><br>A：所有数据保存在 iPhone 本地。卸载 App 时数据一并删除。建议重要邮票通过「分享 → Artaner 文件」备份到 iCloud Drive 或邮箱。</div>
+    <div class="faq"><strong>Q：可以批量删除吗？</strong><br>A：在收藏页左上角点「选择」，多选后右上角垃圾桶按钮可以批量删除。</div>
+    <div class="faq"><strong>Q：标签是什么？</strong><br>A：在编辑邮票时，「标签」section 可以加多个标签（比如「798」「敦煌」「2026 春节」）。收藏页顶部的标签条可以单选过滤。</div>
+    <div class="faq"><strong>Q：支持哪些 iOS 版本？</strong><br>A：最低 iOS 17.0。建议 iPhone 12 / iPad（M1）或更新机型，老设备运行讲解模型可能内存吃紧。</div>
+    <div class="faq"><strong>Q：iPad 能用吗？</strong><br>A：可以。iPad 上支持横竖屏，收藏页会自动变 5 列布局，所有 sheet 内容居中显示。</div>
 
-        <h3>反馈与联系</h3>
-        <ul>
-            <li>邮箱：<a href="mailto:feedback@artaner.app">feedback@artaner.app</a></li>
-            <li>你可以在反馈中附上设备型号、iOS 版本、问题截图和复现步骤，这样我们排查会更快。</li>
-        </ul>
+    <h3>反馈与联系</h3>
+    <ul>
+      <li><strong>邮件</strong>：<a href="mailto:feedback@artaner.app">feedback@artaner.app</a>（最快回复）</li>
+      <li><strong>App 内</strong>：设置 → 反馈，会自动用你的邮件 App 发邮件，并带上版本号</li>
+    </ul>
+    <p>我们承诺：每一封反馈邮件 48 小时内回复。</p>
 
-        <hr>
+    <hr>
 
-        <h2>English</h2>
-        <p>Artaner is an iOS app for turning exhibits, travel, and everyday moments into collectible stamps. You can capture or import a photo, apply a template, save it locally, and use AI narration to generate contextual descriptions.</p>
+    <h2>English</h2>
+    <p>Artaner is an iOS app for turning exhibits, travel, and everyday moments into collectible "stamps".</p>
+    <ul>
+      <li>Capture or pick a photo → choose a template (Ticket, Postage, Polaroid, Passport) → save locally</li>
+      <li>Tap a stamp for AI-generated narration (on-device model + Wikipedia)</li>
+      <li>Export formats: stamp image, social poster, AirPrint, native Artaner file</li>
+    </ul>
 
-        <h3>FAQ</h3>
-        <div class="faq"><strong>Q: Why is the camera unavailable?</strong><br>A: Check iPhone Settings → Artaner → Camera. If you are testing in the simulator, there is no camera hardware, so the app will offer photo library fallback instead.</div>
-        <div class="faq"><strong>Q: Long-press capture does not work.</strong><br>A: Hold for at least 0.5 seconds and wait for the progress ring around the shutter to complete before releasing. A quick tap performs a normal capture.</div>
-        <div class="faq"><strong>Q: Narration has no audio.</strong><br>A: Go to iPhone Settings → Accessibility → Spoken Content → Voices and download a voice pack. Enhanced or Neural voices usually sound best.</div>
-        <div class="faq"><strong>Q: Does narration work offline?</strong><br>A: On-device recognition and summarization can work offline, but fetching Wikipedia context requires internet access. Without network, the app may show a network unavailable message.</div>
-        <div class="faq"><strong>Q: What if the model fails to load?</strong><br>A: The built-in model ships with the app. Check the error details in Settings first, and reinstalling the app usually fixes persistent loading issues.</div>
-        <div class="faq"><strong>Q: Will I lose my data?</strong><br>A: All data is stored locally on your device. Uninstalling the app removes it. We recommend exporting important content to iCloud Drive or email for backup.</div>
-        <div class="faq"><strong>Q: Which systems are supported?</strong><br>A: Minimum iOS 17.0. For the best model performance, we recommend iPhone 12, iPad M1, or newer devices.</div>
-        <div class="faq"><strong>Q: Does it work on iPad?</strong><br>A: Yes. Artaner supports iPad and adapts its layout automatically for portrait and landscape use.</div>
+    <h3>FAQ</h3>
+    <div class="faq"><strong>Q: Why is the camera unavailable?</strong><br>A: Check iPhone Settings → Artaner → Camera. If you're testing in the simulator, simulators have no camera hardware and the app automatically shows "Camera unavailable" with a library picker fallback.</div>
+    <div class="faq"><strong>Q: Long-press to shoot doesn't work?</strong><br>A: Hold for at least 0.5 seconds, a yellow progress ring fills around the shutter while you hold. Release once the ring is full to capture. A single tap on the shutter button also works.</div>
+    <div class="faq"><strong>Q: Narration has no audio.</strong><br>A: iPhone Settings → Accessibility → Spoken Content → Voices → English (or Chinese). Download a voice pack, the "Enhanced" or "Neural" variants sound the most natural.</div>
+    <div class="faq"><strong>Q: Model fails to load.</strong><br>A: The on-device model ships with the app (~350 MB). Settings → Built-in Narration Model → Check Model Loading shows the specific error. Reinstalling the app usually resolves it.</div>
+    <div class="faq"><strong>Q: Does narration work offline?</strong><br>A: Image recognition and on-device summarization run locally. Fetching Wikipedia context requires the internet. Without network the narration fails with a "Network unavailable" message.</div>
+    <div class="faq"><strong>Q: How do I send a stamp to a friend?</strong><br>A: Stamp detail page → Share. Options:<br>• <strong>Artaner file</strong>: a <code>.artaner</code> file your friend can import into Artaner (import lands in V1.1)<br>• <strong>Stamp</strong>: standard stamp image (good for WeChat, AirDrop, iMessage)<br>• <strong>Poster</strong>: 9:16 image suitable for Instagram Stories, Moments</div>
+    <div class="faq"><strong>Q: Will I lose my data?</strong><br>A: All data is stored on your iPhone locally and is deleted when you uninstall. Back up important stamps via Share → Artaner File to iCloud Drive or email.</div>
+    <div class="faq"><strong>Q: Can I delete in bulk?</strong><br>A: In the gallery, tap "Select" in the top-left, multi-select stamps, then the trash icon in the top-right deletes them in a single confirmation.</div>
+    <div class="faq"><strong>Q: What are tags?</strong><br>A: When editing a stamp, the Tags section accepts multiple labels (e.g. "798", "Dunhuang", "Spring 2026"). The pill strip at the top of the gallery filters by a single tag.</div>
+    <div class="faq"><strong>Q: Which iOS versions are supported?</strong><br>A: iOS 17.0 minimum. We recommend iPhone 12 / iPad (M1) or newer, older devices may strain when running the on-device model.</div>
+    <div class="faq"><strong>Q: Does it work on iPad?</strong><br>A: Yes. iPad supports both portrait and landscape, the gallery switches to a 5-column layout, and all modal sheets are centered with constrained width.</div>
 
-        <h3>Feedback & Contact</h3>
-        <ul>
-            <li>Email: <a href="mailto:feedback@artaner.app">feedback@artaner.app</a></li>
-            <li>Please include device model, iOS version, screenshots, and reproduction steps when reporting a bug.</li>
-        </ul>
-    </main>
+    <h3>Feedback &amp; Contact</h3>
+    <ul>
+      <li><strong>Email</strong>: <a href="mailto:feedback@artaner.app">feedback@artaner.app</a> (fastest)</li>
+      <li><strong>In-app</strong>: Settings → Feedback opens your mail app pre-filled with the app version</li>
+    </ul>
+    <p>We commit to replying to every feedback email within 48 hours.</p>
+  </main>
 </body>
 </html>
