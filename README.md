@@ -37,3 +37,13 @@ If GitHub Pages is enabled for this repository, the expected public URLs are:
 ## GitHub Pages
 
 These documents can be served via [GitHub Pages](https://pages.github.com/) for easy public access.
+### 圣杯问问 ShengbeiWenwen
+
+- Privacy Policy: `shengbeiwenwen/privacy.html`
+- Support: `shengbeiwenwen/support.html`
+
+Public URLs:
+
+- `https://diudiuabailu-pixel.github.io/app-legal-docs/shengbeiwenwen/privacy.html`
+- `https://diudiuabailu-pixel.github.io/app-legal-docs/shengbeiwenwen/support.html`
+
