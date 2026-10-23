@@ -53,7 +53,7 @@
 <body>
   <main class="wrap">
     <h1>Offego（破圈）隐私政策 / Privacy Policy</h1>
-    <p class="meta">最后更新 / Last updated: 2026-10-23</p>
+    <p class="meta">最后更新 / Last updated: 2026-10-24</p>
 
     <div class="note">
       <strong>核心说明：</strong>Offego（破圈）提供资料展示、Coffee Chat、聊天、活动、搜索及小O社交助手。我们按你使用的具体功能处理必要信息。下文标为“原生 iOS”的说明以 1.0.2（107）的实现为基础；第 4 节另行说明的“公开机会”适用于支持该功能的新版原生 iOS，并仅在功能开放时适用。这不表示旧版、安卓或小程序已经具有相同功能；其他客户端仍按其实际提供的功能和权限处理信息。<br>
@@ -121,6 +121,13 @@
       <h3>8. 本机性能诊断</h3>
       <p>原生 iOS 使用 Apple MetricKit 接收系统性能及崩溃报告，可能包括设备型号、系统及 App 版本、耗电、启动、卡顿统计和技术调用堆栈，不附加账号、聊天内容或搜索词。</p>
       <p>这些报告仅保存在本机受保护目录，不自动上传、不随设备备份保存，保留最近 7 天，最多 20 份、总量不超过 10 MB。你可在“帮助与客服 → 诊断与性能”导出或清除；导出副本由你管理，分享前请确认接收方。你主动向客服提供诊断文件时，我们会为处理该问题读取相应文件。</p>
+
+      <h3>8.1 自愿帮助改进 Offego（新增原生 iOS 功能）</h3>
+      <p>“我的 → 设置 → 隐私设置 → 帮助改进 Offego”默认关闭，与个性化推荐及小O记忆分别控制。只有你主动开启后，App才汇总功能使用情况，用于发现常用功能与操作困难；不影响正常使用，也不用于广告或跨App跟踪。</p>
+      <p>汇总内容为固定功能模块的进入次数、前台有效使用时长，以及聊天发送和内容发布的尝试、成功与失败次数。时长按5秒粗化，后台及超过30秒没有交互的闲置时间不计入。不上报聊天或发布正文、搜索词、所查看的人或内容ID、页面顺序、位置、链接、账号ID、设备或安装标识。</p>
+      <p>本机仅保存最近7个自然日的受保护汇总，不随设备备份保存。服务开放后通过独立无登录凭据、无Cookie的连接向Offego发送汇总，至多每天成功上传一次，失败时退避重试。仅附带粗化App版本及随机批次标识以防重复计数，不调用AI或第三方统计SDK。网络传输需要服务器短暂处理IP用于限流，汇总接收服务不持久保存IP、User-Agent或请求正文。</p>
+      <p>服务端将数据合并为日期、版本与功能模块的统计，保存90个自然日；随机批次标识与校验摘要仅保留7个自然日用于去重。统计不建立个人行为档案，也不加入私人小O记忆。</p>
+      <p>你可以随时关闭以停止之后的采集和上传，并清除本机未上传汇总。退出或切换账号时清空当前待上传数据，另一个账号需独立选择。已经合并且没有账号关联的统计无法按个人找回或撤销；你主动导出的汇总副本由你自行保管。</p>
 
       <h3>9. 存储、安全与保留</h3>
       <p>我们采用访问控制、加密传输、最小权限和日志审计等合理措施保护信息。账号、公开内容、聊天及必要的安全日志按实现服务、安全及适用法律要求所必需的期限保留；小O任务和本机诊断的具体窗口见第 6、8 节。互联网环境并非绝对安全。</p>
@@ -194,6 +201,13 @@
       <h3>8. On-device performance diagnostics</h3>
       <p>Native iOS uses Apple MetricKit to receive system performance and crash reports, which may include device model, OS and app version, energy use, launch and hang statistics, and technical call stacks. We do not add account details, chat content, or search terms.</p>
       <p>These reports stay in a protected directory on the device, are not uploaded automatically, and are excluded from device backup. They are retained for up to 7 days, with limits of 20 reports and 10 MB in total. You can export or clear them under Help and Support → Diagnostics and Performance. You control exported copies and should check the recipient before sharing. If you voluntarily send a diagnostic file to support, we will read it to address the issue.</p>
+
+      <h3>8.1 Optional product improvement (new native iOS feature)</h3>
+      <p>“Help Improve Offego” under Me → Settings → Privacy Settings is off by default. It is separate from personalized recommendations and 小O memory. Only after you opt in does the app aggregate feature usage to understand useful features and difficulties. Opting out does not restrict normal use. The data is not used for advertising or cross-app tracking.</p>
+      <p>We aggregate visits to fixed feature categories, active foreground time rounded to five seconds, and attempts, successes, and failures for sending chats and publishing content. Background time and idle time after 30 seconds without interaction are excluded. No chat or post text, search terms, viewed person or content IDs, page sequence, location, URLs, account ID, device ID, or installation ID is uploaded.</p>
+      <p>Protected on-device aggregates are retained for seven calendar days and excluded from device backup. When the collection service is available, a separate connection without login credentials or cookies uploads aggregates to Offego at most once successfully per day, with delayed retries on failure. The upload includes only a coarse app version and a random batch identifier for deduplication. No AI or third-party analytics SDK is involved. Transmission requires temporary processing of network IP for rate limiting; the aggregate receiver does not persist IP, User-Agent, or request bodies.</p>
+      <p>The server combines counts by server date, app version, and feature category for 90 calendar days. Random batch identifiers and checksums are retained for seven calendar days to prevent duplicate counts. These aggregates do not create an individual activity profile or become part of private 小O memory.</p>
+      <p>You can turn the option off at any time to stop subsequent collection and uploads and clear unsent local aggregates. Signing out or changing accounts clears pending data, and each account chooses separately. Once combined without an account association, previously uploaded statistics cannot be retrieved or withdrawn for an individual. You control any copies you explicitly export.</p>
 
       <h3>9. Storage, security, and retention</h3>
       <p>We use reasonable measures such as access controls, encrypted transmission, least privilege, and log auditing. Account records, public content, chats, and necessary security logs are retained as needed for service, security, and applicable legal obligations. Sections 6 and 8 specify the windows for 小O tasks and on-device diagnostics. Internet systems cannot be guaranteed absolutely secure.</p>
