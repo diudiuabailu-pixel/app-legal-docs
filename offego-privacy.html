@@ -53,132 +53,144 @@
 <body>
   <main class="wrap">
     <h1>Offego（破圈）隐私政策 / Privacy Policy</h1>
-    <p class="meta">最后更新 / Last updated: 2026-05-11</p>
+    <p class="meta">最后更新 / Last updated: 2026-10-23</p>
 
     <div class="note">
-      <strong>核心说明：</strong>Offego（破圈）是一款面向真实社交连接的社交软件，提供 Coffee Chat、资料展示、匹配连接和 AI Search 等功能。为提供服务，我们会收集实现这些功能所必需的信息，并尽力以最小化、透明和安全的方式处理你的数据。<br>
-      <strong>Core summary:</strong> Offego is a social networking app designed for meaningful real-world connections, including Coffee Chat, profile display, matching, and AI Search. We collect only the information necessary to provide these features and handle it with data minimization, transparency, and security in mind.
+      <strong>核心说明：</strong>Offego（破圈）提供资料展示、Coffee Chat、聊天、活动、搜索及小O社交助手。我们按你使用的具体功能处理必要信息。下文标为“原生 iOS”的说明对应 1.0.2（107）的实现，不表示旧版、安卓或小程序已经具有相同功能；其他客户端仍按其实际提供的功能和权限处理信息。<br>
+      <strong>Core summary:</strong> Offego provides profiles, Coffee Chat, messaging, events, search, and the personal 小O social assistant. We process information needed for the features you use. Details marked “native iOS” describe version 1.0.2 (107); they do not mean that older versions, Android, or the mini program have the same features. Other clients process information according to their actual features and permissions.
     </div>
 
-    <h2>中文</h2>
-    <p>欢迎使用 Offego（破圈）。我们重视你的隐私，并致力于以清晰、透明的方式说明我们如何收集、使用、存储和保护你的个人信息。</p>
+    <section lang="zh-CN" aria-labelledby="zh-title">
+      <h2 id="zh-title">中文</h2>
+      <p>欢迎使用 Offego（破圈）。本政策说明我们如何收集、使用、存储、共享和保护个人信息，以及你可以如何管理这些信息。</p>
 
-    <h3>1. 我们收集哪些信息</h3>
-    <ul>
-      <li><strong>账户与身份信息</strong>：例如昵称、头像、手机号或邮箱（如你注册时提供）、登录凭证信息。</li>
-      <li><strong>个人资料信息</strong>：例如你的职业、公司、学校、城市、兴趣标签、个人介绍，以及你主动填写在主页上的其他内容。</li>
-      <li><strong>社交与互动信息</strong>：例如你发起或参与的 Coffee Chat、连接关系、聊天互动、报名信息、反馈内容。</li>
-      <li><strong>AI Search 输入内容</strong>：当你使用 AI Search 时，你输入的问题、筛选条件和相关操作记录可能会被处理，用于返回搜索结果、提升服务质量和排查故障。</li>
-      <li><strong>设备与日志信息</strong>：例如设备型号、操作系统版本、IP 地址、应用版本、崩溃日志、访问时间、网络状态等。</li>
-      <li><strong>位置信息</strong>：仅在你主动授权并使用基于地理位置的功能时收集，例如推荐附近用户、活动或城市内容。</li>
-    </ul>
+      <h3>1. 我们收集哪些信息</h3>
+      <ul>
+        <li><strong>账号与资料</strong>：手机号、昵称、头像、用户 ID、登录凭据、主动绑定的邮箱，以及你主动填写的职业、公司、学校、城市、兴趣标签和个人介绍。名片还可包含你填写的常驻地址（包括具体地址）、对外展示的手机号或邮箱、微信号和小红书账号等联系方式；提交后会按名片功能展示。</li>
+        <li><strong>内容与互动</strong>：你发布或发送的文字、照片、视频、语音、附件，以及 Coffee Chat、关注和粉丝等连接关系、点赞、收藏、评论、浏览记录、活动报名、消息已读、举报申诉及反馈记录。公开内容会向其他用户展示；私信内容按会话功能传递给相应接收方。</li>
+        <li><strong>搜索与小O输入</strong>：你主动提交的查询、筛选条件和任务内容，以及完成请求所必需的上下文。原生 iOS 的普通搜索历史列表存放在本机，不会作为整份历史自动同步到 Offego 服务器；发起搜索时，当前查询仍会提交给相应搜索服务。小O搜索任务的输入会按第 6 节的网关任务规则临时保存，云端模型处理范围见第 4 节。</li>
+        <li><strong>位置</strong>：授权定位后，用于确定城市或使用相关位置功能；原生 iOS 中，你明确选择活动地点或发送聊天位置时，相应坐标会随该内容提交。你也可以手动选择城市，而不授权设备定位。</li>
+        <li><strong>设备与安全日志</strong>：客户端和服务端可能处理设备型号、系统及 App 版本、IP 地址、请求状态、访问时间、网络状态及故障信息，用于请求处理、安全和排障。具体范围随版本及功能而异。原生 iOS 的 MetricKit 性能和崩溃报告仅保存在本机，见第 8 节，不会因为本条的一般说明而自动上传。</li>
+      </ul>
 
-    <h3>2. 我们如何使用这些信息</h3>
-    <ul>
-      <li>创建和管理你的账户</li>
-      <li>展示你的资料，帮助你建立连接</li>
-      <li>支持 Coffee Chat、聊天、推荐、匹配和活动相关功能</li>
-      <li>处理 AI Search 请求并生成相关结果</li>
-      <li>维护服务安全，防止欺诈、滥用和违规行为</li>
-      <li>分析产品性能、修复故障、优化体验</li>
-      <li>在你同意的情况下，向你发送服务通知、版本更新或活动消息</li>
-    </ul>
+      <h3>2. 处理目的与广告追踪</h3>
+      <ul>
+        <li>完成注册、身份校验、登录、账号管理和安全风控。</li>
+        <li>展示资料和公开内容，提供聊天、Coffee Chat、活动、搜索、推荐和小O功能。</li>
+        <li>提供客服，处理投诉举报，维护服务稳定与安全，履行适用的法律义务。</li>
+        <li>在取得所需权限或同意后发送服务通知。</li>
+      </ul>
+      <p>原生 iOS 1.0.2（107）不使用 IDFA，不集成广告追踪 SDK，也不将 App 数据与其他公司 App 或网站的数据结合，用于定向广告或广告效果衡量。站内推荐和 AI 请求服务于上述产品功能，不等同于跨公司广告追踪。实际收集的账号、消息、位置等信息仍按本政策说明处理。</p>
 
-    <h3>3. 我们如何共享信息</h3>
-    <p>除以下情形外，我们不会出售你的个人信息，也不会向无关第三方披露：</p>
-    <ul>
-      <li><strong>向其他用户展示</strong>：你公开填写的个人资料、头像、昵称、标签、公开动态等，会按产品功能展示给其他用户。</li>
-      <li><strong>服务供应商</strong>：我们可能与云服务、数据存储、消息通知、崩溃监控、安全风控等服务提供商合作，他们仅在提供服务所必需范围内处理数据。</li>
-      <li><strong>法律要求</strong>：当法律法规、司法机关或行政机关要求时，我们可能依法披露相关信息。</li>
-      <li><strong>业务变更</strong>：如发生合并、收购、资产转让等情形，相关信息可能作为交易的一部分转移，但我们会尽力确保接收方继续履行本政策中的隐私保护义务。</li>
-    </ul>
+      <h3>3. 共享、第三方服务与外部链接</h3>
+      <p>我们不出售你的个人信息。我们在实现短信登录、托管存储、消息传递、位置或 AI 等相应功能所必需的范围内使用技术服务提供方；AI 与语音处理方及数据范围详见下文。你主动公开的资料、动态和活动按产品功能向其他用户展示。</p>
+      <p>原生 iOS 1.0.2（107）未集成微信 OpenSDK，未开放微信登录或绑定，不通过该 SDK 收集信息；会员购买与支付尚未开放，不处理支付信息。未来开放相关功能前会更新说明。其他客户端或旧版本是否提供第三方登录、支付等功能，以其实际入口和相应说明为准。</p>
+      <p>外部网页和服务由其各自的隐私政策管理。发生合并、收购或资产转让等需要转移个人信息的情形，或依法必须披露时，我们会履行相应的通知和保护义务。</p>
 
-    <h3>4. 数据存储与安全</h3>
-    <p>我们会采取合理的技术和管理措施保护你的信息，包括访问控制、传输加密、日志审计和最小权限原则。但请理解，没有任何系统可以保证绝对安全。</p>
+      <h3>4. 小O与云端 AI</h3>
+      <p>原生 iOS 中，小O的访谈、画像整理、任务规划、开场建议和帮聊由云端模型生成。当前模型服务提供方是 DeepSeek（杭州深度求索人工智能基础技术研究有限公司），通过 Offego 服务端调用其 API。AI 输出可能有误，请核对后使用。</p>
+      <p>处理一次请求时，会发送你主动提交的文字、必要的近期对话、此次任务涉及的公开人物或动态信息，以及你允许使用的已确认画像、记忆和社交设置，以理解意图和生成回复。普通站内搜索不调用模型；智能站外查询会将查询文字交给模型拆解条件。</p>
+      <p>登录凭据、本机私密备忘和未选择的相册内容不作为模型上下文发送。你可在小O设置中关闭“对话时使用人物画像与记忆”，或修改、删除这些资料；关闭后，后续请求不再附带画像与记忆。该设置不能撤回已经发送的内容。</p>
+      <p>开场、邀约和活动草稿需要你核对后发送或发布。只有在你为特定会话明确启用自动帮聊后，小O才按该授权自动回复，可随时暂停、结束或接手。官方小O是独立的 AI 社区账号，依据社区公开内容及可核对的公开来源发布或评论，不使用你的私人小O资料或私信来生成社区内容。</p>
+      <p>模型提供方对其处理活动的说明见 <a href="https://cdn.deepseek.com/policies/zh-CN/deepseek-privacy-policy.html">DeepSeek 隐私政策</a>。</p>
 
-    <h3>5. 数据保留</h3>
-    <p>我们会在实现本政策所述目的所必需的期限内保留你的信息，除非法律要求更长保留期。若你申请注销账户，我们会在符合法律法规要求的前提下删除或匿名化处理相关信息。</p>
+      <h3>5. 语音输入与语音消息</h3>
+      <p>原生 iOS 的语音输入在你点击麦克风并授权后使用 Apple Speech 语音识别。设备支持时优先本机识别，否则音频可能发送至 Apple 处理。识别结果先进入输入框，不自动发送；你点击发送后，文字才会提交到相应会话或小O。Offego 不保存语音输入的原始音频。</p>
+      <p>聊天中主动录制并发送的语音消息是另一项功能，该音频会上传到 Offego 以供接收方播放。你可在 iOS 设置中撤回麦克风或语音识别权限，仍可使用文字输入。另见 <a href="https://www.apple.com/legal/privacy/data/zh-cn/ask-siri-dictation/">Apple 语音识别与隐私说明</a>。</p>
 
-    <h3>6. 你的权利</h3>
-    <ul>
-      <li>访问、更新或更正你的资料</li>
-      <li>删除部分内容或申请注销账户</li>
-      <li>撤回授权，例如关闭定位权限、通知权限等</li>
-      <li>在适用法律允许的范围内，请求复制、导出或限制处理你的个人信息</li>
-    </ul>
+      <h3>6. 小O本地资料、备份、任务与导出</h3>
+      <p>原生 iOS 中，小O的画像、记忆、设置和对话存放于按环境及 Offego 账号隔离的受保护本地文件；画像、记忆及设置另有本机钥匙串恢复副本。登录凭据另存于钥匙串。使用云端功能时仍会发送第 4 节所述的必要上下文，本地保存不代表全部处理均在本机完成。</p>
+      <p>本地文件可能随你启用的设备备份或换机迁移带到新设备。iCloud 设备备份由 Apple 和你的 Apple 账号设置控制；当前未启用 CloudKit 实时同步，多设备间不会自动合并小O资料。</p>
+      <p>本机私密备忘仅保留在本机，不加入小O上下文，也不包含在小O资料导出中。导出文件是明文，可选择包含对话记录，已导出的副本由你自行保管和删除。</p>
+      <p>为使任务在 App 切到后台后继续运行，Offego 网关会临时保存加密的任务输入与处理状态，并按从任务创建起 24 小时的窗口清理。帮聊授权及必要的会话处理记录保存在 Offego 服务端；清除本机对话不等于撤销帮聊，请在帮聊管理中暂停或结束。24 小时窗口是 Offego 网关任务记录的保留规则，不代表模型服务提供方的保留期限。</p>
 
-    <h3>7. 未成年人保护</h3>
-    <p>Offego（破圈）不面向未满 13 岁的儿童提供服务。如果你认为有未成年人未经监护人同意向我们提供了信息，请联系我们，我们会尽快处理。</p>
+      <h3>7. 你的权利与个性化控制</h3>
+      <ul>
+        <li>访问、更正或删除个人资料及内容，申请注销账号，或就个人信息处理提出咨询、投诉和依法适用的复制、导出或限制处理请求。</li>
+        <li>通过系统设置撤回定位、通知、麦克风及语音识别等权限；撤回不影响之前依法进行的处理，部分依赖权限的功能将无法使用。</li>
+        <li>原生 iOS 可在“我的 → 设置 → 隐私设置 → 个性化推荐”关闭开关，关闭即时生效。此后不基于个人特征或浏览记录进行推荐，改为按发布时间、你明确选择的城市等非个性化条件展示；你主动发起的搜索或小O任务仍可使用。</li>
+        <li>在小O设置中查阅、更正、删除、导出或导入资料，也可重新访谈并审阅画像。相关设置对后续请求生效，不能撤回已发送的内容；已经导出的外部副本需要你自行管理。</li>
+      </ul>
 
-    <h3>8. 第三方服务</h3>
-    <p>应用中可能包含第三方登录、支付、内容跳转或外部链接。相关第三方可能根据其自身隐私政策处理你的信息，请你留意相应规则。</p>
+      <h3>8. 本机性能诊断</h3>
+      <p>原生 iOS 使用 Apple MetricKit 接收系统性能及崩溃报告，可能包括设备型号、系统及 App 版本、耗电、启动、卡顿统计和技术调用堆栈，不附加账号、聊天内容或搜索词。</p>
+      <p>这些报告仅保存在本机受保护目录，不自动上传、不随设备备份保存，保留最近 7 天，最多 20 份、总量不超过 10 MB。你可在“帮助与客服 → 诊断与性能”导出或清除；导出副本由你管理，分享前请确认接收方。你主动向客服提供诊断文件时，我们会为处理该问题读取相应文件。</p>
 
-    <h3>9. 政策更新</h3>
-    <p>我们可能根据产品演进、法律变化或运营需要更新本政策。重大变更将通过 App 内提示、站内通知或其他合理方式告知你。</p>
+      <h3>9. 存储、安全与保留</h3>
+      <p>我们采用访问控制、加密传输、最小权限和日志审计等合理措施保护信息。账号、公开内容、聊天及必要的安全日志按实现服务、安全及适用法律要求所必需的期限保留；小O任务和本机诊断的具体窗口见第 6、8 节。互联网环境并非绝对安全。</p>
+      <p>申请注销或删除后，我们在符合法律义务的前提下删除或匿名化相关信息。已发送给其他用户、由你导出或保存于外部服务的副本，可能需要向相应接收方或服务分别处理。</p>
 
-    <h3>10. 联系我们</h3>
-    <p>如你对本隐私政策有任何疑问、意见或请求，请联系：<a href="mailto:service@offego.cn">service@offego.cn</a></p>
+      <h3>10. 未成年人、政策更新与联系</h3>
+      <p>Offego 不面向未满 13 岁的儿童提供服务。其他未成年人应在监护人阅读并同意本政策后使用；对依法需要监护人同意处理的信息，我们会给予特别保护。如果你认为儿童或未成年人未经所需同意向我们提供了信息，请联系我们。</p>
+      <p>政策会随实际功能或适用要求更新。重大变化将通过 App 内提示、站内通知或其他合理方式告知。关于本政策、个人信息更正或删除等请求，请通过 App“帮助与客服”或邮件联系：<a href="mailto:bailu@offego.cn">bailu@offego.cn</a>。</p>
+    </section>
 
     <hr>
 
-    <h2>English</h2>
-    <p>Welcome to Offego. We value your privacy and aim to explain clearly and transparently how we collect, use, store, and protect your personal information.</p>
+    <section lang="en" aria-labelledby="en-title">
+      <h2 id="en-title">English</h2>
+      <p>Welcome to Offego. This policy explains how we collect, use, store, share, and protect personal information, and how you can manage it.</p>
 
-    <h3>1. Information we collect</h3>
-    <ul>
-      <li><strong>Account and identity information</strong>: such as nickname, avatar, phone number or email address (if provided), and login credentials.</li>
-      <li><strong>Profile information</strong>: such as your role, company, school, city, interest tags, bio, and any other information you voluntarily add to your profile.</li>
-      <li><strong>Social and interaction data</strong>: such as Coffee Chat participation, connections, chat interactions, event registrations, and feedback.</li>
-      <li><strong>AI Search inputs</strong>: when you use AI Search, your queries, filters, and related usage records may be processed to return results, improve quality, and troubleshoot issues.</li>
-      <li><strong>Device and log information</strong>: such as device model, operating system version, IP address, app version, crash logs, access time, and network status.</li>
-      <li><strong>Location information</strong>: collected only when you actively grant permission and use location-based features, such as nearby people, events, or city-based recommendations.</li>
-    </ul>
+      <h3>1. Information we collect</h3>
+      <ul>
+        <li><strong>Account and profile information</strong>: phone number, nickname, avatar, user ID, login credentials, an email address you choose to bind, and the role, company, school, city, interests, or bio you provide. Your profile card may also include an address you enter (including a full address), a publicly displayed phone number or email, and WeChat or Xiaohongshu account handles. Submitted details are displayed through profile-card features.</li>
+        <li><strong>Content and interactions</strong>: text, photos, videos, voice messages, and attachments you publish or send, together with Coffee Chat, following and follower relationships, likes, saves, comments, browsing records, event registrations, message-read status, reports, appeals, and feedback. Public content is shown to other users; private messages are delivered to the relevant recipients.</li>
+        <li><strong>Search and 小O inputs</strong>: queries, filters, tasks, and the context needed to fulfill your requests. In native iOS, the ordinary search-history list stays on the device and is not automatically synchronized as a complete history to Offego servers. The current query is still submitted to the relevant search service when you search. Inputs to 小O search tasks are temporarily stored under the gateway task rules in section 6; section 4 describes cloud-model processing.</li>
+        <li><strong>Location</strong>: with permission, location is used to determine a city or provide relevant location features. In native iOS, coordinates are submitted with an event location or a chat location that you explicitly choose to share. You can also choose a city manually without granting device location access.</li>
+        <li><strong>Device and security logs</strong>: clients and servers may process device model, OS and app version, IP address, request status, access time, network status, and fault information for request handling, security, and troubleshooting. The scope depends on the version and feature. Native iOS MetricKit performance and crash reports stay on the device as described in section 8; this general description does not cause them to be uploaded automatically.</li>
+      </ul>
 
-    <h3>2. How we use information</h3>
-    <ul>
-      <li>To create and manage your account</li>
-      <li>To display your profile and help you make connections</li>
-      <li>To power Coffee Chat, messaging, recommendations, matching, and event-related features</li>
-      <li>To process AI Search requests and return relevant results</li>
-      <li>To maintain security and prevent fraud, abuse, or policy violations</li>
-      <li>To analyze product performance, fix bugs, and improve the user experience</li>
-      <li>To send service notices, version updates, or event messages where permitted and/or with your consent</li>
-    </ul>
+      <h3>2. Purposes and advertising tracking</h3>
+      <ul>
+        <li>Registration, identity verification, sign-in, account management, and security.</li>
+        <li>Profiles, public content, messaging, Coffee Chat, events, search, recommendations, and 小O features.</li>
+        <li>Support, reports and complaints, service stability, security, and applicable legal obligations.</li>
+        <li>Service notifications after obtaining any required permission or consent.</li>
+      </ul>
+      <p>Native iOS 1.0.2 (107) does not access IDFA, include advertising-tracking SDKs, or combine app data with data from other companies’ apps or websites for targeted advertising or advertising measurement. In-app recommendations and AI requests support the product functions above and are not cross-company advertising tracking. Account, message, location, and other information actually collected is still processed as described in this policy.</p>
 
-    <h3>3. How we share information</h3>
-    <p>We do not sell your personal information. We may share information only in the following cases:</p>
-    <ul>
-      <li><strong>With other users</strong>: information you choose to make public, such as your profile, avatar, nickname, tags, and public activity, may be visible to other users.</li>
-      <li><strong>With service providers</strong>: such as cloud hosting, storage, messaging, crash monitoring, and security providers, solely as needed to operate the service.</li>
-      <li><strong>For legal reasons</strong>: when required by law, regulation, court order, or lawful government request.</li>
-      <li><strong>Business transfers</strong>: in connection with a merger, acquisition, financing, or asset transfer, subject to appropriate privacy protections.</li>
-    </ul>
+      <h3>3. Sharing, third-party services, and external links</h3>
+      <p>We do not sell your personal information. We use technology providers as necessary for the features you use, including SMS sign-in, hosting and storage, message delivery, location, or AI. AI and speech providers and the relevant data are described below. Profiles, posts, and events you make public are shown to other users through the product.</p>
+      <p>Native iOS 1.0.2 (107) does not include WeChat OpenSDK or offer WeChat sign-in or account binding, and does not collect data through that SDK. Membership purchases and payments are not enabled and payment information is not processed. We will update this explanation before introducing those features. Third-party sign-in or payments in other clients or older versions depend on their actual features and corresponding notices.</p>
+      <p>External websites and services have their own privacy policies. If a merger, acquisition, or asset transfer requires a transfer of personal information, or disclosure is required by law, we will fulfill applicable notification and protection obligations.</p>
 
-    <h3>4. Data storage and security</h3>
-    <p>We use reasonable technical and organizational safeguards to protect your information, including access controls, encrypted transmission, logging, and least-privilege practices. However, no system can be guaranteed to be absolutely secure.</p>
+      <h3>4. 小O and cloud AI</h3>
+      <p>In native iOS, 小O interviews, portrait summaries, task planning, conversation starters, and chat assistance use a cloud model. The current model provider is DeepSeek (Hangzhou DeepSeek Artificial Intelligence Basic Technology Research Co., Ltd.), whose API is called through Offego servers. AI output may be inaccurate; review it before use.</p>
+      <p>A request sends the text you submit, necessary recent conversation, relevant public profile or post information, and confirmed portrait, memories, and social settings you allow to be used, for understanding intent and generating a response. Ordinary in-app search does not call the model; intelligent external search sends query text to the model to interpret search conditions.</p>
+      <p>Login credentials, device-only private notes, and unselected photo-library content are not sent as model context. In 小O settings, you can turn off the use of portrait and memories in conversations, or edit or delete those records. Subsequent requests then omit the portrait and memories. This setting cannot recall information already sent.</p>
+      <p>Conversation starters, invitations, and event drafts require your review before sending or publishing. 小O automatically replies only after you explicitly enable automatic chat assistance for a particular conversation; you can pause, end, or take over it. Official 小O is a separate AI community account that posts or comments using public community content and verifiable public sources, without using your private 小O records or direct messages to generate community content.</p>
+      <p>See the <a href="https://cdn.deepseek.com/policies/zh-CN/deepseek-privacy-policy.html">DeepSeek Privacy Policy</a> for the provider’s description of its processing.</p>
 
-    <h3>5. Data retention</h3>
-    <p>We retain information only for as long as necessary to fulfill the purposes described in this policy, unless a longer retention period is required by law. If you request account deletion, we will delete or anonymize relevant information subject to legal obligations.</p>
+      <h3>5. Dictation and voice messages</h3>
+      <p>In native iOS, dictation uses Apple Speech after you tap the microphone and grant permission. On-device recognition is preferred when supported; otherwise audio may be sent to Apple. Recognized text first appears in the input field and is not sent automatically. It is submitted to the relevant conversation or 小O only when you tap send. Offego does not retain the raw audio used for dictation.</p>
+      <p>Voice messages you record and send in chat are a separate feature: that audio is uploaded to Offego so the recipient can play it. You can revoke microphone or speech-recognition permission in iOS settings and continue typing. See <a href="https://www.apple.com/legal/privacy/data/zh-cn/ask-siri-dictation/">Apple’s speech and privacy information</a>.</p>
 
-    <h3>6. Your rights</h3>
-    <ul>
-      <li>Access, update, or correct your information</li>
-      <li>Delete certain content or request account deletion</li>
-      <li>Withdraw permissions, such as location or notification access</li>
-      <li>Where permitted by applicable law, request export, copy, or restriction of processing of your personal information</li>
-    </ul>
+      <h3>6. Local 小O records, backup, tasks, and exports</h3>
+      <p>In native iOS, 小O portraits, memories, settings, and conversations are stored in protected local files separated by environment and Offego account. Portraits, memories, and settings also have a device-local Keychain recovery copy. Login credentials are stored separately in Keychain. Cloud features still send the necessary context described in section 4; local storage does not mean that all processing stays on the device.</p>
+      <p>Local files may move to another device through device backup or migration you enable. iCloud device backup is controlled by Apple and your Apple account settings. CloudKit live synchronization is not enabled, and 小O records are not automatically merged between devices.</p>
+      <p>Device-only private notes stay on the device, are not included in 小O context, and are excluded from 小O exports. Export files are unencrypted and can optionally include conversations. You are responsible for keeping and deleting exported copies.</p>
+      <p>To continue tasks after the app moves to the background, the Offego gateway temporarily stores encrypted task input and processing status and cleans it up using a 24-hour retention window measured from task creation. Chat-assistance authorizations and necessary conversation-processing records are stored on Offego servers. Clearing local conversations does not revoke chat assistance; pause or end it in its management screen. The 24-hour window applies to Offego gateway task records, not to the model provider’s retention practices.</p>
 
-    <h3>7. Children's privacy</h3>
-    <p>Offego is not intended for children under 13. If you believe a child has provided us with personal information without proper consent, please contact us and we will take appropriate action.</p>
+      <h3>7. Your rights and personalization controls</h3>
+      <ul>
+        <li>Access, correct, or delete profile information and content, request account deletion, and make inquiries, complaints, or legally applicable requests for copies, exports, or processing restrictions.</li>
+        <li>Revoke location, notifications, microphone, or speech-recognition permissions in system settings. Revocation does not affect prior lawful processing; dependent features may no longer work.</li>
+        <li>In native iOS, turn off “Personalized Recommendations” under Me → Settings → Privacy Settings. The change takes effect immediately. Recommendations then stop using personal characteristics or browsing history and instead use non-personalized criteria such as publication time or a city you explicitly select. Searches or 小O tasks you initiate remain available.</li>
+        <li>View, correct, delete, export, or import records in 小O settings, or repeat the interview and review your portrait. Settings affect subsequent requests and cannot recall information already sent. You must manage copies already exported outside the app.</li>
+      </ul>
 
-    <h3>8. Third-party services</h3>
-    <p>The app may include third-party login, payment, outbound links, or embedded services. Those third parties may process information under their own privacy policies.</p>
+      <h3>8. On-device performance diagnostics</h3>
+      <p>Native iOS uses Apple MetricKit to receive system performance and crash reports, which may include device model, OS and app version, energy use, launch and hang statistics, and technical call stacks. We do not add account details, chat content, or search terms.</p>
+      <p>These reports stay in a protected directory on the device, are not uploaded automatically, and are excluded from device backup. They are retained for up to 7 days, with limits of 20 reports and 10 MB in total. You can export or clear them under Help and Support → Diagnostics and Performance. You control exported copies and should check the recipient before sharing. If you voluntarily send a diagnostic file to support, we will read it to address the issue.</p>
 
-    <h3>9. Policy updates</h3>
-    <p>We may update this policy as the product evolves, laws change, or operational needs shift. Material changes will be communicated through the app, in-product notices, or other reasonable means.</p>
+      <h3>9. Storage, security, and retention</h3>
+      <p>We use reasonable measures such as access controls, encrypted transmission, least privilege, and log auditing. Account records, public content, chats, and necessary security logs are retained as needed for service, security, and applicable legal obligations. Sections 6 and 8 specify the windows for 小O tasks and on-device diagnostics. Internet systems cannot be guaranteed absolutely secure.</p>
+      <p>Following an account or data deletion request, we delete or anonymize relevant information subject to legal obligations. Copies already sent to other users, exported by you, or stored with external services may need to be handled separately with the relevant recipient or service.</p>
 
-    <h3>10. Contact</h3>
-    <p>If you have any questions, comments, or requests about this privacy policy, contact us at: <a href="mailto:service@offego.cn">service@offego.cn</a></p>
+      <h3>10. Minors, policy changes, and contact</h3>
+      <p>Offego is not intended for children under 13. Other minors should use it only after a guardian has read and agreed to this policy. Information legally requiring guardian consent receives special protection. Please contact us if you believe a child or minor has provided information without required consent.</p>
+      <p>We update this policy as features or applicable requirements change. Material changes will be communicated through in-app notices, messages, or other reasonable means. For questions about this policy or requests to correct or delete personal information, use Help and Support in the app or email <a href="mailto:bailu@offego.cn">bailu@offego.cn</a>.</p>
+    </section>
   </main>
 </body>
 </html>
