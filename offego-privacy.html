@@ -68,7 +68,7 @@
       <ul>
         <li><strong>账号与资料</strong>：手机号、昵称、头像、用户 ID、登录凭据、主动绑定的邮箱，以及你主动填写的职业、公司、学校、城市、兴趣标签和个人介绍。名片还可包含你填写的常驻地址（包括具体地址）、对外展示的手机号或邮箱、微信号和小红书账号等联系方式；提交后会按名片功能展示。</li>
         <li><strong>内容与互动</strong>：你发布或发送的文字、照片、视频、语音、附件，以及 Coffee Chat、关注和粉丝等连接关系、点赞、收藏、评论、浏览记录、活动报名、消息已读、举报申诉及反馈记录。公开内容会向其他用户展示；私信内容按会话功能传递给相应接收方。</li>
-        <li><strong>搜索与小O输入</strong>：你主动提交的查询、筛选条件和任务内容，以及完成请求所必需的上下文。原生 iOS 的普通搜索历史列表存放在本机，不会作为整份历史自动同步到 Offego 服务器；发起搜索时，当前查询仍会提交给相应搜索服务。小O搜索任务的输入会按第 6 节的网关任务规则临时保存，云端模型处理范围见第 4 节。</li>
+        <li><strong>搜索与小O输入</strong>：你主动提交的查询、筛选条件和任务内容，以及完成请求所必需的上下文。原生 iOS 的普通搜索历史列表存放在本机，不会作为整份历史自动同步到 Offego 服务器；发起搜索时，当前查询仍会提交给相应搜索服务。小O搜索任务的输入会按第 6 节的网关任务规则临时保存；付费扩展查找结果按该节单独说明的 7 天交付恢复窗口保存，云端模型处理范围见第 4 节。</li>
         <li><strong>位置</strong>：授权定位后，用于确定城市或使用相关位置功能；原生 iOS 中，你明确选择活动地点或发送聊天位置时，相应坐标会随该内容提交。你也可以手动选择城市，而不授权设备定位。</li>
         <li><strong>设备与安全日志</strong>：客户端和服务端可能处理设备型号、系统及 App 版本、IP 地址、请求状态、访问时间、网络状态及故障信息，用于请求处理、安全和排障。具体范围随版本及功能而异。原生 iOS 的 MetricKit 性能和崩溃报告仅保存在本机，见第 8 节，不会因为本条的一般说明而自动上传。</li>
       </ul>
@@ -111,6 +111,8 @@
       <p>本机私密备忘仅保留在本机，不加入小O上下文，也不包含在小O资料导出中。导出文件是明文，可选择包含对话记录，已导出的副本由你自行保管和删除。</p>
       <p>为使任务在 App 切到后台后继续运行，Offego 网关会临时保存加密的任务输入与处理状态，并按从任务创建起 24 小时的窗口清理。帮聊授权及必要的会话处理记录保存在 Offego 服务端；清除本机对话不等于撤销帮聊，请在帮聊管理中暂停或结束。24 小时窗口是 Offego 网关任务记录的保留规则，不代表模型服务提供方的保留期限。公开机会的单次分析不采用此任务保存方式，适用第 4 节的单独说明。</p>
 
+      <p><strong>扩展找人的交付与恢复：</strong>为恢复已经扣次的扩展查找结果，Offego 将返回的公开候选资料加密暂存最多 7 天，并关联去标识的账号和请求编号；同一任务恢复不重复扣次。这与上述 24 小时的一般任务窗口分别适用。本机按账号保存查询、待恢复任务和结果，使用系统文件保护。你可在公开资料查找的历史记录菜单清除本机已完成的查询和结果；未完成任务的恢复记录保留，以避免中断后重复扣次。次数账本仅保留核对购买、扣次、次数返还及防重复所需的交易和摘要记录，不保存完整聊天或私人记忆。</p>
+
       <h3>7. 你的权利与个性化控制</h3>
       <ul>
         <li>访问、更正或删除个人资料及内容，申请注销账号，或就个人信息处理提出咨询、投诉和依法适用的复制、导出或限制处理请求。</li>
@@ -149,7 +151,7 @@
       <ul>
         <li><strong>Account and profile information</strong>: phone number, nickname, avatar, user ID, login credentials, an email address you choose to bind, and the role, company, school, city, interests, or bio you provide. Your profile card may also include an address you enter (including a full address), a publicly displayed phone number or email, and WeChat or Xiaohongshu account handles. Submitted details are displayed through profile-card features.</li>
         <li><strong>Content and interactions</strong>: text, photos, videos, voice messages, and attachments you publish or send, together with Coffee Chat, following and follower relationships, likes, saves, comments, browsing records, event registrations, message-read status, reports, appeals, and feedback. Public content is shown to other users; private messages are delivered to the relevant recipients.</li>
-        <li><strong>Search and 小O inputs</strong>: queries, filters, tasks, and the context needed to fulfill your requests. In native iOS, the ordinary search-history list stays on the device and is not automatically synchronized as a complete history to Offego servers. The current query is still submitted to the relevant search service when you search. Inputs to 小O search tasks are temporarily stored under the gateway task rules in section 6; section 4 describes cloud-model processing.</li>
+        <li><strong>Search and 小O inputs</strong>: queries, filters, tasks, and the context needed to fulfill your requests. In native iOS, the ordinary search-history list stays on the device and is not automatically synchronized as a complete history to Offego servers. The current query is still submitted to the relevant search service when you search. Inputs to 小O search tasks are temporarily stored under the gateway task rules in section 6; expanded-search results use the separate seven-day delivery-recovery window in that section. Section 4 describes cloud-model processing.</li>
         <li><strong>Location</strong>: with permission, location is used to determine a city or provide relevant location features. In native iOS, coordinates are submitted with an event location or a chat location that you explicitly choose to share. You can also choose a city manually without granting device location access.</li>
         <li><strong>Device and security logs</strong>: clients and servers may process device model, OS and app version, IP address, request status, access time, network status, and fault information for request handling, security, and troubleshooting. The scope depends on the version and feature. Native iOS MetricKit performance and crash reports stay on the device as described in section 8; this general description does not cause them to be uploaded automatically.</li>
       </ul>
@@ -191,6 +193,8 @@
       <p>Local files may move to another device through device backup or migration you enable. iCloud device backup is controlled by Apple and your Apple account settings. CloudKit live synchronization is not enabled, and 小O records are not automatically merged between devices.</p>
       <p>Device-only private notes stay on the device, are not included in 小O context, and are excluded from 小O exports. Export files are unencrypted and can optionally include conversations. You are responsible for keeping and deleting exported copies.</p>
       <p>To continue tasks after the app moves to the background, the Offego gateway temporarily stores encrypted task input and processing status and cleans it up using a 24-hour retention window measured from task creation. Chat-assistance authorizations and necessary conversation-processing records are stored on Offego servers. Clearing local conversations does not revoke chat assistance; pause or end it in its management screen. The 24-hour window applies to Offego gateway task records, not to the model provider’s retention practices. One-time Public Opportunities analysis does not use this task-storage mechanism and follows the separate explanation in section 4.</p>
+
+      <p><strong>Expanded-search delivery and recovery:</strong> To recover results for an expanded search that used a credit, Offego encrypts and temporarily stores the returned public candidate profiles for up to seven days, associated with pseudonymous account and request identifiers. Recovering the same task does not use another credit. This window is separate from the general 24-hour task window above. Queries, pending recovery records, and results are stored per account on the device using system file protection. You can clear completed local queries and results from the public-profile search history menu; pending recovery records remain to prevent duplicate charges after an interruption. The credit ledger retains the transaction and summary records needed to reconcile purchases, usage, returned credits, and duplicate requests, rather than complete chats or private memories.</p>
 
       <h3>7. Your rights and personalization controls</h3>
       <ul>
