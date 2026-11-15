@@ -99,6 +99,13 @@
       <p>你可以举报社区内容或成员。服务器保存举报对象、原因、补充说明、提交者及处理状态，该社区共创者可查看并处理，举报人信息不向被举报者展示。屏蔽名单按账号保存在服务器和本机，用于向你隐藏被屏蔽者的社区动态、评论和群消息，可在社区菜单解除。自己发送的群消息可在两分钟内撤回；共创者及有权限的活动主理人可移除群消息，评论作者、动态作者或共创者可移除相应评论。移除后清空正文并保留处理记录，用于同步和安全处理；举报中已保存的摘要、其他人已经看到或保存的副本不会自动删除。</p>
 
       <h3>4. 小O与云端 AI</h3>
+      <h4>云端处理授权与撤回（1.0.5 build 2+）</h4>
+      <p>使用上述云端功能前，我们会单独请求明确授权；接受注册协议或购买共创卡不等于同意云端处理。</p>
+      <p>根据你使用的功能，发送输入的文字和相关对话上下文、你确认的画像与记忆、选中的动态或项目内容；帮聊仅发送你指定会话的相关消息。找人时会发送你输入的姓名、账号或搜索条件。</p>
+      <p>内容会传输至 Offego 服务器，并交由受托的第三方云端模型服务生成回答、整理画像、理解需求或拟写回复。查找站外人物时，必要的搜索关键词和筛选条件还会提供给第三方公开资料检索服务；不会把完整聊天记录或私密备忘提供给检索服务。</p>
+      <p>允许后，只有在你使用相关功能时才发送；定时推荐与自动帮聊仍需另行开启。拒绝不影响社区、普通聊天和其他基础功能。可在“小O设置 → 云端授权”撤回，暂停定时推荐及帮聊。已经发送的任务可能继续完成，撤回不会自动删除既有记录。</p>
+      <p>撤回后，本机立即停止新的云端请求；需要联网确认后台定时推荐和帮聊已暂停。其他设备上的授权需分别管理。</p>
+
       <p>原生 iOS 中，小O的访谈、画像整理、任务规划、开场建议和帮聊由 Offego 服务端统一提供，并按功能需要调用云端模型生成内容。AI 输出可能有误，请核对后使用。</p>
       <p>处理一次请求时，会发送你主动提交的文字、必要的近期对话、此次任务涉及的公开人物或动态信息，以及你允许使用的已确认画像、记忆和社交设置，以理解意图和生成回复。普通站内搜索不调用模型；智能站外查询会将查询文字交给模型拆解条件。</p>
       <p>登录凭据、本机私密备忘和未选择的相册内容不作为模型上下文发送。你可在小O设置中关闭“对话时使用人物画像与记忆”，或修改、删除这些资料；关闭后，后续请求不再附带画像与记忆。该设置不能撤回已经发送的内容。</p>
@@ -194,6 +201,13 @@
       <p>You can report community content or members. The server stores the target, reason, details, reporter and review status. Co-creators of that community can review and act on reports; the reported person is not shown the reporter’s information. Your blocked-account list is stored on the server and on your device to hide those accounts’ community posts, comments and group messages from you. You can unblock them in the community menu. You can recall your own group message within two minutes. Co-creators and authorized activity hosts can remove group messages; comment authors, post authors and co-creators can remove the relevant comments. Removal clears the text and keeps a processing record for syncing and safety. Previously saved report excerpts and copies already seen or saved by others are not automatically deleted.</p>
 
       <h3>4. 小O and cloud AI</h3>
+      <h4>Cloud-processing permission and withdrawal（1.0.5 build 2+）</h4>
+      <p>We request separate, explicit permission before these cloud features are used. Accepting registration terms or buying a Co-creation Card does not grant this permission.</p>
+      <p>Depending on the feature you use, we send your input and relevant conversation context, confirmed profile and memories, and selected posts or project content. Chat assistance uses relevant messages from your selected conversation. People search sends the names, handles or search criteria you enter.</p>
+      <p>Content is sent to Offego servers and entrusted third-party cloud model services to generate answers, organize profiles, understand requests or draft replies. External people search also shares necessary search keywords and filters with third-party public-information search services, without sharing full conversations or private notes with those search services.</p>
+      <p>After you allow, data is sent when you use the relevant features. Scheduled recommendations and automatic chat assistance require separate activation. Declining does not affect communities, ordinary messaging or other basic features. Withdraw in Xiao O Settings → Cloud permission to pause scheduled recommendations and chat assistance. Already submitted tasks may finish; withdrawal does not automatically delete existing records.</p>
+      <p>Withdrawal immediately blocks new cloud requests on this device. An internet connection is needed to confirm scheduled recommendations and chat assistance have stopped. Manage permissions on other devices separately.</p>
+
       <p>In native iOS, 小O interviews, portrait summaries, task planning, conversation starters, and chat assistance are provided through Offego servers, which call cloud models as needed to generate content. AI output may be inaccurate; review it before use.</p>
       <p>A request sends the text you submit, necessary recent conversation, relevant public profile or post information, and confirmed portrait, memories, and social settings you allow to be used, for understanding intent and generating a response. Ordinary in-app search does not call the model; intelligent external search sends query text to the model to interpret search conditions.</p>
       <p>Login credentials, device-only private notes, and unselected photo-library content are not sent as model context. In 小O settings, you can turn off the use of portrait and memories in conversations, or edit or delete those records. Subsequent requests then omit the portrait and memories. This setting cannot recall information already sent.</p>
